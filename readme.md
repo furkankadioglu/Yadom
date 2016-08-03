@@ -68,15 +68,19 @@ Blog sistemimizdeki mevcut olan sayfa yapımıza, dinamik olarak anasayfayı da 
 **Örnek Kullanım**
 
 İletişim sayfasından mail göndermeye çalışınca hata çıkıyor.
+
 **Öncelik Durumu:** Önemli ve Acil
 
 Blog sistemimizdeki mevcut olan sayfa yapımıza, dinamik olarak anasayfayı da düzenlemeyi ekleyeceğiz.
+
 **Öncelik Durumu:** Önemli
 
 İnternet sitesine girdiğimizde, galeri bölümünde bir yavaşlık var gibi.
+
 **Öncelik Durumu:** Önemsiz
 
 Kontrol panelinde sayfa ekleme butonu "ekle" yerine "submit" olarak kalmış.
+
 **Öncelik Durumu:** Bekleyebilir
 
 ## Fikir ##
@@ -212,7 +216,7 @@ Son Örnek
 ====
 
  **Tip**
- Major
+ Minor
 
 ----------
 
