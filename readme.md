@@ -5,17 +5,17 @@ Müşteri, Yazılım Geliştirmeni arasındaki iletişimi en az hatayla kurmayı
 
 Yapı
 ====
-- Tip
-- Öncelik Durumu
-- Fikir
-- İstek
-- Modeller
-- Fonksiyonlar
-- Bağlı Sayfalar
-- Dolaylı Sayfalar
-- Beklentiler
-- Dosya Ekleri
-- Diğer Notlar
+ - Tip
+ - Öncelik Durumu
+ - Fikir
+ - İstek
+ - Modeller
+ - Fonksiyonlar
+ - Bağlı Sayfalar
+ - Dolaylı Sayfalar
+ - Beklentiler
+ - Dosya Ekleri
+ - Diğer Notlar
 
 
 Yapıda bulunan her maddeyi tek tek açıklamaya çalışacağım şimdi. Örnekli yoldan gidelim.
@@ -26,9 +26,9 @@ Burada örneğimiz bir blog olsun; yani bir blog sistemi kodlanacak ve bunu YADO
 
 Üçe ayrılmalıdır. Bunlar nelerdir?
 
-1. Major
-2. Minor
-3. Patch
+ 1. Major
+ 2. Minor
+ 3. Patch
 
 **Neden Böyle?**
 
@@ -36,9 +36,9 @@ Burada örneğimiz bir blog olsun; yani bir blog sistemi kodlanacak ve bunu YADO
 
 Major, Minor ve Patch arasındaki farklar temel olarak şu şekildedir;
 
-- **Major**: Ana fikri ve büyük bir yapı değişikliği/eklenti/oluşumu kapsar.
-- **Minor**: Küçük değişiklikleri kapsar, major sınıfına girmeyecek herşey buraya dahildir.
-- **Patch**: Daha önce major ve minor sınıflarında yazılan kodlardan herhangi birinde hata/bug çıktıysa, bu durumu düzeltmek için yapılan güncellemelere/fixlere denir.
+ - **Major**: Ana fikri ve büyük bir yapı değişikliği/eklenti/oluşumu kapsar.
+ - **Minor**: Küçük değişiklikleri kapsar, major sınıfına girmeyecek herşey buraya dahildir.
+ - **Patch**: Daha önce major ve minor sınıflarında yazılan kodlardan herhangi birinde hata/bug çıktıysa, bu durumu düzeltmek için yapılan güncellemelere/fixlere denir.
 
 Daha fazla bilgi almak için [semver.org](http://semver.org)'u kaynak alabilirsiniz.
 
@@ -60,10 +60,10 @@ Blog sistemimizdeki mevcut olan sayfa yapımıza, dinamik olarak anasayfayı da 
 
 Öncelik durumları listesi şu şekildedir, sırasıyla öncelikliden önceliksize gitmektedir.
 
-- Önemli ve Acil
-- Önemli
-- Önemsiz
-- Bekleyebilir
+ - Önemli ve Acil
+ - Önemli
+ - Önemsiz
+ - Bekleyebilir
 
 **Örnek Kullanım**
 
@@ -114,11 +114,11 @@ Bir model başlığı olur ve detayları olur.
 
 **Model:** 
 SAYFA
-- Sayfa Başlığı
-- Sayfa Açıklaması
-- Sayfa Keywordleri
-- Oluşturulma Tarihi
-- Okunma Sayısı
+ - Sayfa Başlığı
+ - Sayfa Açıklaması
+ - Sayfa Keywordleri
+ - Oluşturulma Tarihi
+ - Okunma Sayısı
 
 ## Fonksiyonlar *(Opsiyonel)* ##
 
@@ -211,40 +211,40 @@ Yazılı iletişimi en fonksiyonel halde işimiz de nasıl kullanabiliriz diye d
 Son Örnek
 ====
 
-**Tip**
-Major
+ **Tip**
+ Major
 
 ----------
 
 
-**Öncelik Durumu**
-Önemli
+ **Öncelik Durumu**
+ Önemli
 
 ----------
 
 
-**Fikir**
-Haberler diye bir bölüm eklenmesi
+ **Fikir**
+ Haberler diye bir bölüm eklenmesi
 
 ----------
 
-**İstek**
+ **İstek**
 Haberler bölümü kontrol panelinden yönetilebilir. Haberler bölümünün kategorileri olmalı ve bu kategoriler de yine kontrol panelinden yönetilebilir olmalı. Buradan girdiğimiz haberleri kullanıcılar Haberler bölümünden görüntüleyebilmeli ve istedikleri haberi tıklayıp okuyabilmeleri gerekiyor, beğendikleri haberi de facebookta paylaşabilmeleri lazım.
 
 
 ----------
 
 
-**Modeller**
+ **Modeller**
 
 HABER
-- Haber Başlığı
-- Haber Açıklaması
-- Haber Keywordleri
-- Haber Kategorisi (Oluşturulacak olan kategori modeliyle bağlantılı)
-- Yazar (Daha önceki kullanıcı modelinden bağlantılı)
-- Oluşturulma Tarihi
-- Okunma Sayısı
+ - Haber Başlığı
+ - Haber Açıklaması
+ - Haber Keywordleri
+ - Haber Kategorisi (Oluşturulacak olan kategori modeliyle bağlantılı)
+ - Yazar (Daha önceki kullanıcı modelinden bağlantılı)
+ - Oluşturulma Tarihi
+ - Okunma Sayısı
 
 KATEGORI
 Kategori Adı
@@ -257,7 +257,7 @@ Haber Adı
 
 ----------
 
-**Fonksiyonlar**
+ **Fonksiyonlar**
 
 Fonksiyon: Okuyucu Ekle
 Kullanıcı sayfaya girdiğinde, kullanıcının bu sayfayı okuduğunu bildiren bir veri kaydet.
@@ -268,7 +268,10 @@ Oluşturduğumuz sayfayı kimler okumuşsa databaseden bunları getir ve listele
 Fonksiyon: Facebookta Paylaş
 Kullanıcı, sayfaya girdikten ve okuduktan sonra bir buton ile yazıyı sosyal medyada paylaşabilmelidir.
 
-**Bağlı Sayfalar**
+----------
+
+
+ **Bağlı Sayfalar**
 
 Bağlı Sayfa: Haber Ekleme Sayfası
 Bağlı Sayfa: Haber Silme Sayfası
@@ -277,20 +280,33 @@ Bağlı Sayfa: Kullanıcı Haber Görüntüleme Sayfası
 Bağlı Sayfa: Kategoriler Sayfası
 Bağlı Sayfa: Kategorideki Haberler Sayfası
 
-**Dolaylı Sayfalar**
+----------
+
+
+ **Dolaylı Sayfalar**
 
 Dolaylı Sayfa: Anasayfa sayfasının sağ kısmına son eklenen haberler bölümü ekleyelim ve burada son 5 haber çıksın.
 
-**Beklentiler**
+----------
 
-Beklenti: Kullanıcı tarafında haber arama bölümünde dinamik arama olsun, sayfa yenilenmeden arama yapsın ve sonuçlar gelsin.
 
-**Dosya Ekleri**
+ **Beklentiler**
+ 
+ Beklenti: Kullanıcı tarafında haber arama bölümünde dinamik arama olsun, sayfa yenilenmeden arama yapsın ve sonuçlar gelsin.
+
+----------
+
+
+ 
+ **Dosya Ekleri**
 
 Şu siteye benzeyebilir haberler bölümü
 Dosya Eki: http://www.nytimes.com/
 
-**Diğer Notlar**
+----------
+
+
+ **Diğer Notlar**
 
 Diğer Not: Kontrol paneline giriş yapabilmen için sana hesap oluşturdum kullanıcı adı dev şifresi 1234
 Diğer Not: Yarın saat 2'den sonra sorularını yanıtlayabilirim.
