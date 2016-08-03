@@ -45,12 +45,15 @@ Daha fazla bilgi almak için [semver.org](http://semver.org)'u kaynak alabilirsi
 **Örnek Kullanım**
 
 Blog sistemimize bir de sabit sayfa yapısı ekleyeceğiz.
+
 **Tip:** Major
 
 Blog sistemimizdeki mevcut olan sayfa yapımıza, dinamik olarak anasayfayı da düzenlemeyi ekleyeceğiz.
+
 **Tip:** Minor
 
 İletişim sayfasından mail göndermeye çalışınca hata çıkıyor.
+
 **Tip:** Patch
 
 
@@ -135,15 +138,19 @@ Standart fonksiyonları **yazmamanız** sizin için daha iyi olur bu arada, mese
 **Örnek Kullanım**
 
 Modelde belirttiğimiz örnekten gidelim.
+
 Özet İstek: Basit bir sayfalar bölümü olacak *(temel modelimiz Sayfa oluyor)*
 
 **Fonksiyon:** Okuyucu Ekle
+
 Kullanıcı sayfaya girdiğinde, kullanıcının bu sayfayı okuduğunu bildiren bir veri kaydet.
 
 **Fonksiyon:** Okuyucuları Getir
+
 Oluşturduğumuz sayfayı kimler okumuşsa databaseden bunları getir ve listele.
 
 **Fonksiyon:** Facebookta Paylaş
+
 Kullanıcı, sayfaya girdikten ve okuduktan sonra bir buton ile yazıyı sosyal medyada paylaşabilmelidir.
 
 ## Bağlı Sayfalar *(Opsiyonel)* ##
@@ -156,10 +163,15 @@ Modelde belirttiğimiz örnekten gidelim.
 Özet İstek: Basit bir sayfalar bölümü olacak *(temel modelimiz Sayfa oluyor)*
 
 **Bağlı Sayfa:** Sayfa görüntüleme sayfası
+
 **Bağlı Sayfa:** Tüm sayfaların görüntülendiği bir sayfa (timeline)
+
 **Bağlı Sayfa:** Kontrol paneli sayfa görüntüleme düzenleme
+
 **Bağlı Sayfa:** Kontrol paneli sayfa görüntüleme ekleme
+
 **Bağlı Sayfa:** Kontrol paneli sayfa görüntüleme silme
+
 
 ## Dolaylı Sayfalar *(Opsiyonel)* ##
 
@@ -170,9 +182,11 @@ Dolaylı Sayfa, bir fikrin sisteme entegrasyonuyla birlikte önceden yapılmış
 **Örnek Kullanım**
 
 Modelde belirttiğimiz örnekten gidelim.
+
 Özet İstek: Basit bir sayfalar bölümü olacak *(temel modelimiz Sayfa oluyor)*
 
 **Dolaylı Sayfa:** İnternet sitemizdeki tüm sayfaların üst navigasyon menüsüne SAYFALAR bölümünü ekleyelim.
+
 **Dolaylı Sayfa:** Sayfalar bölümünü eklememizle birlikte, Anasayfa'ya Son Açılmış Sayfalar diye bir ek yapalım. 
 
 ## Beklentiler *(Opsiyonel)* ##
@@ -182,9 +196,11 @@ Burada fikrinizi gerçekleştirecek olan yazılımcıdan yapmasını umduğunuz 
 **Örnek Kullanım**
 
 Modelde belirttiğimiz örnekten gidelim.
+
 Özet İstek: Basit bir sayfalar bölümü olacak.
 
 **Beklenti:** Sayfa arama bölümünde aranılacak sayfayı yazdığımızda sayfa yenilenmeden veriler gelmeli.
+
 **Beklenti:** Admin panelinde sayfa silmeye tıkladığımızda emin misiniz diye sormalı.
 
 ## Dosya Ekleri *(Opsiyonel)* ##
@@ -194,6 +210,7 @@ Dosya eki, fikrinizi daha iyi anlatmayı amaçlayan materyalleri koyabileceğini
 **Örnek Kullanım**
 
 Varsayalım ki Google'ın ana arama sayfasını düzenlettiriyorsunuz, fikriniz bunun üzerine..
+
 **Dosya Eki:** http://galeri2.uludagsozluk.com/301/insanin-olum-ani-videosunda-bile-reklam-almak_377263.jpg
 
 ## Diğer Notlar *(Opsiyonel)* ##
@@ -203,6 +220,7 @@ Diğer Not, dediğimiz kısım ise bu şablona sığdıramadığımız fakat yaz
 **Örnek Kullanım**
 
 **Diğer Not:** Saat 13.00'dan sonra ofiste olacağım, sorun varsa görüşebiliriz.
+
 **Diğer Not:** Site kontrol paneli şifresi 123456.
 
 Diğer
@@ -251,13 +269,13 @@ HABER
  - Okunma Sayısı
 
 KATEGORI
-Kategori Adı
-Kategori Açıklaması
+ - Kategori Adı
+ - Kategori Açıklaması
 
 HABER KATEGORI BAGLANTISI
 *(Burası için biraz yazılım bilgisi gerekebilir, bunu eklemeseniz de olur, bu tablo bir köprü görevi görerek haberler ile kategorileri eşleştirir)*
-Kategori Adı
-Haber Adı
+ - Kategori Adı
+ - Haber Adı
 
 ----------
 
@@ -278,11 +296,17 @@ Kullanıcı, sayfaya girdikten ve okuduktan sonra bir buton ile yazıyı sosyal 
  **Bağlı Sayfalar**
 
 Bağlı Sayfa: Haber Ekleme Sayfası
+
 Bağlı Sayfa: Haber Silme Sayfası
+
 Bağlı Sayfa: Haber Düzenleme Sayfası
+
 Bağlı Sayfa: Kullanıcı Haber Görüntüleme Sayfası
+
 Bağlı Sayfa: Kategoriler Sayfası
+
 Bağlı Sayfa: Kategorideki Haberler Sayfası
+
 
 ----------
 
@@ -305,6 +329,7 @@ Dolaylı Sayfa: Anasayfa sayfasının sağ kısmına son eklenen haberler bölü
  **Dosya Ekleri**
 
 Şu siteye benzeyebilir haberler bölümü
+
 Dosya Eki: http://www.nytimes.com/
 
 ----------
@@ -313,4 +338,5 @@ Dosya Eki: http://www.nytimes.com/
  **Diğer Notlar**
 
 Diğer Not: Kontrol paneline giriş yapabilmen için sana hesap oluşturdum kullanıcı adı dev şifresi 1234
+
 Diğer Not: Yarın saat 2'den sonra sorularını yanıtlayabilirim.
